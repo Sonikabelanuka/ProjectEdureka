@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegistrationPage -CulinaryDelight</title>
+</head>
+<body>
+    <header style="border: 1px solid gray;">
+        <nav style="display: flex; justify-content: space-between;">
+            <a  href="home.html"><img src="./assets/logo.jpg" alt="this is logo" height="100" width="150"></a>
+        <ul style="display: inline;">
+            <li style="display: inline;"><a href="">Home</a></li>
+            <li style="display: inline;"><a href="">Recipes</a></li>
+            <li style="display: inline;"><a href="">Blog</a></li>
+            <li style="display: inline;"><a href="">Shop</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Profile Registration</h1>
+            <form action="" method="">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="title">Title:</label>
+                        <select name="title" id="title">
+                            <option value="">Select Value</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Chef">Chef</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="firstName">FirstName:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="Enter your FirstName">
+                    </div>
+                    <div>
+                        <label for="lastName">LastName:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Enter your LastName">
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="dob" id="dob">
+                    </div>
+                    <div>
+                        <label for="dobt">Time of Birth:</label>
+                        <input type="time" name="dobt" id="dobt">
+                    </div>
+                    <div>
+                        <label for="mob">Month of Birth:</label>
+                        <input type="month" name="mob" id="mob">
+                    </div>
+                    <div>
+                        <label for="dobt">datetime of Birth:</label>
+                        <input type="datetime-local" name="dobt" id="dobt">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email-id">
+                    </div>
+                    <div>
+                        <label for="phone">Mobile Number:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="11-11-1111">
+                    </div>
+                    <div>
+                        <label for="website">Portfolio Website:</label>
+                        <input type="url" name="website" id="website" placeholder="Enter your website">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Professional Information</legend>
+                    <div>
+                        <label for="experience">Years of experience:</label>
+                        <input type="number" name="experience" id="experience">
+                    </div>
+                    <div>
+                        <label for="expertise">Expertise Level</label>
+                        <input type="range" name="expertise" id="expertise" min="0" max="10" value="8" step="2">
+                        <output for="expertise">Intermediate</output>
+                    </div>
+                    <div>
+                        <label for="specialties">Specialties</label> <br>
+                        <input type="checkbox" name="italian" id="italian" value="italian">
+                        <label for="italian">Italian Cuisine</label>  <br>
+
+                        <input type="checkbox" name="french" id="french" value="italian">
+                        <label for="french">French Cuisine</label> <br>
+
+                        <input type="checkbox" name="asian" id="asian" value="asian">
+                        <label for="asian">Asian Cuisine</label> <br>
+
+                        <input type="checkbox" name="baking" id="baking" value="baking">
+                        <label for="baking">Baking & Pastry</label> <br>
+                        </div>
+
+                        <div>
+                        <label for="Working">Working Hours</label> <br>
+                        <input type="radio" name="morning" id="morning" value="morning">
+                        <label for="morning">Morning (6AM - 2AM)</label> <br>
+
+                        <input type="radio" name="noon" id="noon" value="noon">
+                        <label for="noon">Afternoon (2PM - 10PM)</label> <br>
+
+                        <input type="radio" name="evening" id="evening" value="evening">
+                        <label for="evening">Flexible Hours</label>
+
+                    </div>
+                    
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information:</legend>
+                    <label for="signature-id">Signature Recipe</label>
+                    <input type="text" name="signature-id" id="signature-id" list="recipe-suggestion">
+                    <datalist id="recipe-suggestion">
+                        <option value="Italian Pasta">
+                        <option value="French Onion Soup">
+                        <option value="Chocolate Soufflé">
+                        <option value="Beef Wellington">
+                    </datalist>
+                    </select> <br>
+
+                    <label for="start-date">Available Start date:</label>
+                    <input type="month" name="start-date" id="start-date"> <br>
+
+                    <label for="preferred-time">Preferred Interview Time:</label>
+                    <input type="time" name="preferred-time" id="preferred-time"> <br>
+
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio" rows="4" cols="50" 
+                    placeholder="Tell us about your culinary journey"></textarea> <br>
+
+                    <label for="favorite-color">Profile Color Theme:</label>
+                    <input type="color" name="favorite-color" id="favorite-color" value="#ff6b6b"> <br>
+
+                    <label for="keywords">Search Keywords:</label>
+                    <input type="text" name="keywords" id="keywords" placeholder="Add relevant keywords"> <br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Terms & Submission</legend>
+                    <input type="checkbox" name="terms" id="terms">
+                    <label for="terms">I agree to the terms and conditions</label> <br>
+
+                    <input type="checkbox" name="subscribe" id="subscribe">
+                    <label for="subscribe">Subscribe to our newsletter</label> <br>
+
+                    <button>Reset form</button>
+                    <button>Submit Application</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; 2024 CulinaryDelight. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
